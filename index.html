@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXPERT 19 ASSISTANT</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080d18;
+  color: white;
+}
+
+header {
+  padding: 25px 20px;
+  background: linear-gradient(135deg,#101d36,#123d70);
+  border-bottom: 2px solid #00d9ff;
+}
+
+header h1 {
+  color: #00eaff;
+  font-size: 25px;
+  margin: 0;
+}
+
+header p {
+  color: #b6c9df;
+}
+
+.container {
+  padding: 18px;
+}
+
+.status {
+  background: #132238;
+  padding: 18px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #087fa5;
+}
+
+.status h2 {
+  color: #00eaff;
+}
+
+.card {
+  background: #131e30;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #263c59;
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-top: 0;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#007bff,#00c6ff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8295ae;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>⚡ EXPERT 19</h1>
+<p>ULTIMATE GAMING ASSISTANT</p>
+</header>
+
+<div class="container">
+
+<div class="status">
+<h2>🎮 GAME SPACE</h2>
+<p>Selamat datang di pusat gaming Expert 19.</p>
+<p>Status: <span style="color:#00ff91">READY</span></p>
+</div>
+
+<div class="card">
+<h3>🚀 GAME BOOSTER</h3>
+<p>Persiapkan HP untuk pengalaman bermain game.</p>
+<button onclick="boost()">OPTIMIZE GAMING</button>
+<p id="boostStatus"></p>
+</div>
+
+<div class="card">
+<h3>🤖 AI ASSISTANT</h3>
+<p>Asisten pintar EXPERT 19.</p>
+<button onclick="assistant()">BUKA ASSISTANT</button>
+</div>
+
+<div class="card">
+<h3>📱 DEVICE INFO</h3>
+<p id="device"></p>
+<button onclick="deviceInfo()">CEK PERANGKAT</button>
+</div>
+
+<div class="card">
+<h3>🎯 GAMING MODE</h3>
+<p>Aktifkan tampilan mode gaming.</p>
+<button onclick="gamingMode()">ACTIVATE GAMING MODE</button>
+<p id="gamingStatus"></p>
+</div>
+
+</div>
+
+<footer>
+EXPERT 19 ASSISTANT<br>
+Created by Udin © 2026
+</footer>
+
+<script>
+
+function boost() {
+ document.getElementById("boostStatus").innerText =
+ "Gaming preparation selesai! Tutup aplikasi latar belakang yang tidak diperlukan secara manual.";
+}
+
+function assistant() {
+ let q = prompt("Halo! Saya EXPERT 19. Apa yang ingin kamu tanyakan?");
+ if(q) {
+  alert("Pertanyaan kamu: " + q +
+  "\n\nAI Assistant siap dikembangkan lebih lanjut.");
+ }
+}
+
+function deviceInfo() {
+ document.getElementById("device").innerText =
+ "Perangkat: " + navigator.userAgent;
+}
+
+function gamingMode() {
+ document.getElementById("gamingStatus").innerText =
+ "GAMING MODE ON!";
+}
+
+</script>
+
+</body>
+</html>
