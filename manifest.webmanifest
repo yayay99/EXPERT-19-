@@ -1,0 +1,19 @@
+{
+  "name": "EXPERT 19 ASSISTANT",
+  "short_name": "EXPERT 19",
+  "description": "Ultimate Gaming Assistant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080d18",
+  "theme_color": "#101d36",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
